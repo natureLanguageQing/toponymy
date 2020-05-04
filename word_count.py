@@ -7,7 +7,7 @@ for index, i in enumerate(words):
     print(index, i)
     for j in i["context"]:
         word = j.strip()
-        if j in word_count.keys():
+        if word in word_count.keys():
             word_count[word] += 1
         else:
             word_count[word] = 1
